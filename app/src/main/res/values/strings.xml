@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ara és l\'hora?</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="araeslhora">Ara és l\'hora?</string>
+    <string name="tornar_a_comprovar">Tornar a comprovar?</string>
+
+    <string name="acerca_de">Quant a</string>
+    <string name="autores1">Aplicació desenvolupada per:</string>
+    <string name="autores2">Albert Pagès i Jesús Escribano</string>
+    <string name="contacto1">Contacta amb nosaltres:</string>
+    <string name="contacto2">Running Dogs Studio runningdogsstudio@gmail.com</string>
+
+</resources>

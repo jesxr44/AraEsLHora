@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Araeslhora$PlaceholderFragment"
+    android:background="#fff4be00">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/araeslhora"
+        android:id="@+id/araButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:height="200dip"
+        android:width="200dip"
+        android:textSize="50dp"
+        android:textColor="#ef4033"
+        android:onClick="araEsLHora"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tornar_a_comprovar"
+        android:id="@+id/tornarButton"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ef4033"
+        android:onClick="tornar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Encara no"
+        android:id="@+id/frase"
+        android:layout_above="@+id/araButton"
+        android:textSize="20dp"
+        android:layout_below="@+id/resposta"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="NO"
+        android:id="@+id/resposta"
+        android:textSize="100dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+</RelativeLayout>
+<!-- From: file:/Users/kudo44/Documents/workspace/AraEsLhora/app/src/main/res/layout/fragment_araeslhora.xml -->

@@ -10,7 +10,7 @@
     android:background="#fff4be00">
 
 
-    <Button
+  <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/araeslhora"
@@ -36,7 +36,7 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Encara no"
         android:id="@+id/frase"
@@ -53,7 +53,8 @@
         android:text="NO"
         android:id="@+id/resposta"
         android:textSize="100dp"
-        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/araButton"
         android:layout_centerHorizontal="true"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        />
 </RelativeLayout>

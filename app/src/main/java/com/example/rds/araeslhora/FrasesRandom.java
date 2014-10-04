@@ -10,9 +10,19 @@ public class FrasesRandom {
                     "Encara no",
                     "Casi",
                     "jajajajaja",
-                    "Puede que si...puede que non...",
+                    "Puede que sí...puede que non...",
                     "Casi casi...",
-                    "Al igual"
+                    "Al igual",
+                    "Això no toca encara",
+                    "Que pesadet",
+                    "Que no!",
+                    "Que no, bretol!",
+                    "Impreguntabla",
+                    "Queda poc ja",
+                    "Falta molt",
+                    "Demà no puc, ¿Pot ser passat demà?",
+                    "No volíeu democràcia?",
+                    "Els tancs encara estan passant la ITV"
             };
     public static final String fraseSi = "SÍ";
     public static final String fraseNo = "NO";

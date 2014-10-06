@@ -21,7 +21,8 @@
         android:width="200dip"
         android:textSize="50dp"
         android:textColor="#ef4033"
-        android:onClick="araEsLHora"/>
+        android:onClick="araEsLHora"
+       android:background="@drawable/mainbutton"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -32,6 +33,9 @@
         android:visibility="gone"
         android:layout_alignParentBottom="true"
         android:textColor="#ef4033"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/mainbutton"
         android:onClick="tornar"/>
 
     <TextView
@@ -50,11 +54,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         android:text="NO"
         android:id="@+id/resposta"
         android:textSize="100dp"
         android:layout_alignTop="@+id/araButton"
-        android:layout_centerHorizontal="true"
         android:visibility="gone"
         />
 </RelativeLayout>

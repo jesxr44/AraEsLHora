@@ -53,7 +53,19 @@ public class Araeslhora extends Activity {
     }
 
     private String getFrase() {
-        return (esElDia() == true) ? "" : getFraseRandom();
+        //pequeña modificación para que la frase random sea la fraseCasi
+        //return (esElDia() == true) ? "" : getFraseRandom();
+
+        String fraseRetornar;
+
+        if(esElDia() == true){
+            fraseRetornar = "";
+        }else{
+                fraseRetornar = (esLaHora() == true) ? FrasesRandom.fraseCasi : getFraseRandom();
+        }
+        return fraseRetornar;
+
+
     }
 
     private Boolean esElDia()
@@ -73,6 +85,21 @@ public class Araeslhora extends Activity {
                 c1.get(Calendar.DAY_OF_MONTH) == c2.get(Calendar.DAY_OF_MONTH);
 
         return esElDia;
+    }
+
+    private Boolean esLaHora()
+    {
+        Calendar c1 = new GregorianCalendar();
+        c1.set(Calendar.HOUR_OF_DAY, 17);
+        c1.set(Calendar.MINUTE, 14);
+        c1.set(Calendar.SECOND, 0);
+
+        Calendar c2 = new GregorianCalendar();
+
+        Boolean esLaHora = c1.get(Calendar.HOUR_OF_DAY) == c2.get(Calendar.HOUR_OF_DAY) &&
+                c1.get(Calendar.MINUTE) == c2.get(Calendar.MINUTE);
+
+        return esLaHora;
     }
 
     private String getFraseRandom() {

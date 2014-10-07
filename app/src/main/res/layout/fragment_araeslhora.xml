@@ -32,10 +32,10 @@
         android:layout_centerHorizontal="true"
         android:visibility="gone"
         android:layout_alignParentBottom="true"
-        android:textColor="#ef4033"
+        android:textColor="#ffefefef"
         android:paddingRight="10dp"
         android:paddingLeft="10dp"
-        android:background="@drawable/stylebuttons"
+        android:background="@drawable/styleagain"
         android:onClick="tornar"/>
 
     <TextView

@@ -3,6 +3,7 @@ package com.example.rds.araeslhora;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -18,6 +19,8 @@ import java.util.Random;
 
 
 public class Araeslhora extends Activity {
+
+    private MediaPlayer segadorsAudio = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,25 @@ public class Araeslhora extends Activity {
 
         tornarButton.setVisibility(View.VISIBLE);
         araButton.setVisibility(View.GONE);
+
+        escoltarAudio();
+    }
+
+    private void escoltarAudio(){
+        if(!esLaHora()){
+            segadorsAudio = null;
+            segadorsAudio = new MediaPlayer();
+            segadorsAudio = MediaPlayer.create(Araeslhora.this, R.raw.els_segadors);
+            segadorsAudio.start();
+        }
+    }
+
+    private void aturarAudio(){
+        if(segadorsAudio != null && segadorsAudio.isPlaying())
+        {
+            segadorsAudio.stop();
+            segadorsAudio.reset();
+        }
     }
 
     private String getResposta() {
@@ -64,7 +86,6 @@ public class Araeslhora extends Activity {
                 fraseRetornar = (esLaHora() == true) ? FrasesRandom.fraseCasi : getFraseRandom();
         }
         return fraseRetornar;
-
 
     }
 
@@ -118,6 +139,8 @@ public class Araeslhora extends Activity {
         frase.setVisibility(View.GONE);
         tornarButton.setVisibility(View.GONE);
         araButton.setVisibility(View.VISIBLE);
+
+        aturarAudio();
     }
 
     @Override
@@ -140,6 +163,12 @@ public class Araeslhora extends Activity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    protected void onStop() {
+        aturarAudio();
+        super.onStop();  // Always call the superclass method first
     }
 
     /**

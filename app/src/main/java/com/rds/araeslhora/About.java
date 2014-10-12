@@ -1,4 +1,4 @@
-package com.example.rds.araeslhora;
+package com.rds.araeslhora;
 
 import android.app.Activity;
 import android.os.Bundle;

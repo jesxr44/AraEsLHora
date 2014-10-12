@@ -1,4 +1,4 @@
-package com.example.rds.araeslhora;
+package com.rds.araeslhora;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -54,7 +54,7 @@ public class Araeslhora extends Activity {
     }
 
     private void escoltarAudio(){
-        if(!esLaHora()){
+        if(esLaHora()){
             segadorsAudio = null;
             segadorsAudio = new MediaPlayer();
             segadorsAudio = MediaPlayer.create(Araeslhora.this, R.raw.els_segadors);
@@ -75,9 +75,6 @@ public class Araeslhora extends Activity {
     }
 
     private String getFrase() {
-        //pequeña modificación para que la frase random sea la fraseCasi
-        //return (esElDia() == true) ? "" : getFraseRandom();
-
         String fraseRetornar;
 
         if(esElDia() == true){

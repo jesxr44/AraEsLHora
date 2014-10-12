@@ -3,9 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 19
     buildToolsVersion "20.0.0"
-
     defaultConfig {
-        applicationId "com.example.rds.araeslhora"
+        applicationId 'com.rds.araeslhora'
         minSdkVersion 14
         targetSdkVersion 19
         versionCode 1
@@ -16,6 +15,8 @@ android {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    productFlavors {
     }
 }
 

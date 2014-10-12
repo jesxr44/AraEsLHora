@@ -1,4 +1,4 @@
-package com.example.rds.araeslhora;
+package com.rds.araeslhora;
 
 /**
  * Created by kudo44 on 02/10/14.
